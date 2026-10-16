@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { isSupabaseConfigured, supabase } from './lib/supabase'
 import Reports from './components/Reports'
 
-const categories = ['Alimentação', 'Transporte', 'Moradia', 'Saúde', 'Lazer', 'Educação', 'Salário', 'Freelance', 'Outros']
+const categories = ['Alimentação', 'Transporte', 'Moradia', 'Saúde', 'Lazer', 'Streaming', 'Educação', 'Salário', 'Freelance', 'Outros']
 const currency = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' })
 const today = () => new Date().toISOString().slice(0, 10)
 const emptyForm = { description: '', amount: '', type: 'expense', category: 'Alimentação', date: today() }
